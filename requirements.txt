@@ -1,0 +1,19 @@
+# === Core Libraries ===
+numpy==1.26.4
+pandas==2.2.3
+scikit-learn==1.4.2
+matplotlib==3.8.4
+
+# === Deep Learning (LSTM + Transformer) ===
+torch==2.5.0
+
+# === Gradient Boosted Trees (XGBoost) ===
+xgboost==3.0.0
+
+# === Hyperparameter Optimization ===
+ray[default]==2.44.1
+hyperopt==0.2.7
+
+# === Optional (Progress bars, logging, misc utilities) ===
+tqdm==4.66.2
+
