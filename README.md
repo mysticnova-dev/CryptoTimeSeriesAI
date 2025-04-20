@@ -1,12 +1,4 @@
 
----
-title: CryptoTimeSeriesAI
-author: Leo
-description: "This project forecasts Bitcoin using Transformer, LSTM and XGBoost"
----
-
-
----
 
 # 🧠 Cryptocurrency Forecasting with Deep Learning and Machine Learning
 
@@ -46,7 +38,6 @@ python run_transformer_pipeline.py
 ```
 
 This script will:
-
 - Load the dataset
 - Clean and engineer features
 - Train + tune the Transformer model
@@ -60,7 +51,7 @@ python run_lstm_pipeline.py
 python run_xgboost_pipeline.py
 ```
 
-> 📂 All outputs are saved under `./LSTM/Models/`, `./Transformer/Models/`, or `./XGBoost/`.
+> 📂 All outputs are saved under `./LSTM/Models/`, `./Transformer/Models/`, or `./XGBoost/Models/`.
 
 ---
 
@@ -68,27 +59,28 @@ python run_xgboost_pipeline.py
 
 The dataset consists of daily Bitcoin blockchain metrics including price, supply, volume, mining difficulty, and transactional activity. See the full [data dictionary](#📊-dataset-description) below.
 
-Ensure the dataset is named `bitcoin_dataset.csv` and placed in the root directory or update the path in the `run_*.py` scripts.
+Ensure the dataset is named `bitcoin_dataset.csv` and placed in the `Data/` directory or update the path in the `run_*.py` scripts.
 
 ---
 
 ## 🛠️ Project Structure
 
 ```
-├── bitcoin_dataset.csv              # Input CSV file (daily blockchain metrics)
-├── run_transformer_pipeline.py     # Full Transformer training pipeline
-├── run_lstm_pipeline.py            # LSTM training script
-├── run_xgboost_pipeline.py         # XGBoost regression baseline
 ├── utils/
-│   ├── data_cleaning_utils.py      # Handles missing values
-│   └── generate_btc_features.py    # Feature engineering logic
+│   ├── data_cleaning_utils.py           # Handles missing values
+│   └── generate_btc_features.py         # Feature engineering logic
 ├── Transformer/
-│   └── Models/                     # Saved Transformer models, plots, and metrics
+│   └── Models/                          # Saved Transformer models, plots, and metrics
 ├── LSTM/
-│   └── Models/                     # Saved LSTM models, plots, and metrics
-├── XGBoost_regressor_demo.pdf      # XGBoost demonstration
-├── Transformer_Demo.pdf            # Transformer explanation and visuals
-├── LSTM_Demo.pdf                   # LSTM explanation and visuals
+│   └── Models/                          # Saved LSTM models, plots, and metrics
+├── XGBoost/
+│   └── Models/                          # Saved XGBoost models, plots, and metrics
+├── Data/
+│   └── bitcoin_dataset.csv              # Input CSV file (daily blockchain metrics)
+├── PDFs/
+│   ├── Transformer_Demo.pdf             # Transformer explanation and visuals
+│   ├── XGBoost_regressor_demo.pdf       # XGBoost demonstration
+│   └── LSTM_Demo.pdf                    # LSTM explanation and visuals
 ├── requirements.txt
 └── README.md
 ```
@@ -130,7 +122,6 @@ Features are generated using domain-relevant indicators:
 ## 🧠 Model Overview
 
 ### 🔁 LSTM
-
 - Recurrent neural network with memory cells
 - Tunable sequence length and hidden layers
 - Sliding-window sequence generation
@@ -138,7 +129,6 @@ Features are generated using domain-relevant indicators:
 - Early stopping for generalization
 
 ### 🧠 Transformer
-
 - Positional encoding + self-attention
 - Multi-head architecture with MLP decoder
 - Flattened token sequence → global prediction
@@ -146,7 +136,6 @@ Features are generated using domain-relevant indicators:
 - Full visualization and model checkpointing
 
 ### ⚡ XGBoost
-
 - High-performance gradient-boosted trees
 - Tabular feature format (no sequence modeling)
 - Robust to noise and fast to train
@@ -221,7 +210,6 @@ pip install -r requirements.txt
 ```
 
 Minimum required packages:
-
 ```
 numpy
 pandas
@@ -235,17 +223,13 @@ hyperopt
 
 ---
 
-
-
-
 ## 🚀 Future Work
 
-- 🔁 *Hypercomplex Neural Net Forecasting: Extend the architecture using quaternion, octonion, and even sedenion-based neural networks to capture entangled market signals across multi-dimensional manifolds, enabling richer representation learning for temporal financial data.
+- 🔁 **Hypercomplex Neural Net Forecasting**: Extend the architecture using quaternion, octonion, and even sedenion-based neural networks to capture entangled market signals across multi-dimensional manifolds, enabling richer representation learning for temporal financial data.
 - 🧠 **Bayesian Smoothing**: Apply Bayesian inference for uncertainty-aware predictions and to regularize noisy outputs in volatile market zones.
 - 📉 **Residual Modeling**: Predict model residuals as a secondary signal and recursively refine the primary forecasts using residual correction loops.
 - 🧮 **Hierarchical Forecasting**: Integrate taxonomic structures (e.g., price → trend + volatility components) with specialized submodels.
 - 📈 **Feature Importance from Attention Maps**: Extract interpretability insights by aggregating self-attention weights from transformer heads.
-
 
 ---
 
@@ -253,8 +237,4 @@ hyperopt
 
 **Leonard Burtenshaw**  
 AI Engineer | Forecast Architect | Data Science Specialist  
-[LinkedIn](https://linkedin.com/in/leoharrisai/)  
-
----
-
-
+[LinkedIn](https://linkedin.com/in/leoharrisai/)
