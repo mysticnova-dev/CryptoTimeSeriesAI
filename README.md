@@ -31,27 +31,7 @@ source .venv/bin/activate  # On Windows: .venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-### 3️⃣ Run End-to-End Pipeline (Transformer)
-
-```bash
-python run_transformer_pipeline.py
-```
-
-This script will:
-- Load the dataset
-- Clean and engineer features
-- Train + tune the Transformer model
-- Visualize losses and predictions
-- Save all artifacts (metrics, plots, models)
-
-### 4️⃣ Run LSTM or XGBoost Baselines
-
-```bash
-python run_lstm_pipeline.py
-python run_xgboost_pipeline.py
-```
-
-> 📂 All outputs are saved under `./LSTM/Models/`, `./Transformer/Models/`, or `./XGBoost/Models/`.
+All outputs are saved under `./LSTM/Models/`, `./Transformer/Models/`, or `./XGBoost/Models/`.
 
 ---
 
