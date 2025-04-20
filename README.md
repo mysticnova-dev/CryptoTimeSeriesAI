@@ -155,14 +155,14 @@ You also get:
 
 ---
 
-## 🔬 Best Transformer Results (Tuned)
+## 🔬 Best Results XGBoost Tuned
 
 | Metric | Value |
 |--------|-------|
-| MSE    | 378,066.09 |
-| RMSE   | 614.87 |
-| MAE    | 271.34 |
-| R²     | 0.7616 |
+| MSE    | 45325.7883 |
+| RMSE   | 212.8985 |
+| MAE    | 119.4872 |
+| R²     | 0.9712 |
 
 Best Hyperparameters:
 
