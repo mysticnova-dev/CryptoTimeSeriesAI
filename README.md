@@ -167,16 +167,15 @@ You also get:
 Best Hyperparameters:
 
 ```yaml
-seq_len: 8
-batch_size: 4
-lr: 5.733e-05
-patience: 400
-min_delta: 0.0001
-nhead: 4
-num_layers: 8
-dim_feedforward: 128
-dropout: 0.211
-num_mlp_units: 128
+colsample_bytree: 0.7447698266738357
+gamma: 7.692991551918608
+learning_rate: 0.03012583048868712
+max_depth: 3
+min_child_weight: 3.0
+n_estimators: 100
+reg_alpha: 0.0003163525705898181
+reg_lambda: 0.0023388797183377724
+subsample: 0.521394012077824
 ```
 
 ---
