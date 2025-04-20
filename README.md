@@ -1,3 +1,11 @@
+
+---
+title: CryptoTimeSeriesAI
+author: Leo
+description: "This project forecasts Bitcoin using Transformer, LSTM and XGBoost"
+---
+
+
 ---
 
 # 🧠 Cryptocurrency Forecasting with Deep Learning and Machine Learning
