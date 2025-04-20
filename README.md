@@ -1,6 +1,6 @@
 
 
-# 🧠 Cryptocurrency Forecasting with Deep Learning and Machine Learning
+# Cryptocurrency Forecasting with Deep Learning and Machine Learning
 
 This project forecasts short-term Bitcoin price movements using engineered blockchain indicators and state-of-the-art modeling techniques:
 
